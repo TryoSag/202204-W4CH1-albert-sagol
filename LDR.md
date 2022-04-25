@@ -1,0 +1,16 @@
+- ## App
+  - Muestra el titulo de la pagina
+  - Pasar una funcion a las cards cuando son seleccionadas
+  - Pasar una funcion al boton cuando seleccione a todas las cards
+- ## Info
+  - Muestra un numero pasado
+  - Muestra un texto pasado
+- ## Button
+  - Muestra un texto pasado
+  - onClick ejecuta una funcion
+- ## Gentleman
+  - Muestra una foto
+  - Muestra la primera letra del nombre en mayuscula
+  - Muestra el nombre
+  - Muestra una lista de datos
+  - onClick ejecuta una funcion
