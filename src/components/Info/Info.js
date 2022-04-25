@@ -1,5 +1,5 @@
 const Info = ({ number, text }) => {
-  <p className="info">{`${number} ${text}`}</p>;
+  return <p className="info">{`${number} ${text}`}</p>;
 };
 
 export default Info;

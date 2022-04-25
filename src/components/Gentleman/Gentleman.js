@@ -1,36 +1,28 @@
-const Gentleman = ({
-  name,
-  status,
-  profession,
-  twitter,
-  picture,
-  alternativeText,
-  action,
-}) => {
+const Gentleman = ({ gentleman, action }) => {
   return (
     <li className="gentleman" onClick={action}>
       <div className="geetleman__avatar-container">
         <img
-          src={picture}
-          alt={alternativeText}
+          src={`img/${gentleman.picture}`}
+          alt={gentleman.alternativeText}
           className="gentleman__avatar"
         />
-        <span className="gentleman__initial">{`${picture[0].toUpperCase()}`}</span>
+        <span className="gentleman__initial">{`${gentleman.picture[0].toUpperCase()}`}</span>
       </div>
       <div className="gentleman__data-container">
-        <h2 className="gentleman__name">{name}</h2>
+        <h2 className="gentleman__name">{gentleman.name}</h2>
         <ul className="gentleman__data-list">
           <li className="gentleman__data">
             <span className="gentleman__data-label">Profession:</span>
-            {profession}
+            {gentleman.profession}
           </li>
           <li className="gentleman__data">
             <span className="gentleman__data-label">Status:</span>
-            {status}
+            {gentleman.status}
           </li>
           <li className="gentleman__data">
             <span className="gentleman__data-label">Twitter:</span>
-            {twitter}
+            {gentleman.twitter}
           </li>
         </ul>
       </div>
